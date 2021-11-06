@@ -20,7 +20,7 @@ A simple mathematical expression evaluator that uses Pokemon types to replace sy
 | **✴**  | ==              |    Normal    |
 | **❤**  | (               |    Fairy     |
 | **☽**  | )               |    Dark      |
-| **⸙**  | |               |    Grass     |
+| **⸙**  | \|              |    Grass     |
 | **中**  | >>>             |    Dragon    |
 | **⏚**  | <<<             |    Ground   |
 
