@@ -6,29 +6,35 @@ A simple mathematical expression evaluator that uses Pokemon types to replace sy
 
 ### Reference
 
-| Symbol | Math Equivalent | Pokemon Type |
+| Symbol | sath Equivalent | Pokemon Type |
 |--------|-----------------|--------------|
-| **♨**  | +               |    Fire      |
-| **≋**  | -               |    Water     |
-| **ᨏ** | *               |    Rock      |
-| **༄** | /               |    Flying    |
-| **☇**  | //              |    Electric  |
-| **☠**  | * 0             |    Poison    |
-| **❅()**| abs()           |    Ice       |
-| **☯**  | >               |   Fighting   |
-| **❂**  | <               |    Psychic   |
-| **✴**  | ==              |    Normal    |
-| **❤**  | (               |    Fairy     |
-| **☽**  | )               |    Dark      |
-| **⸙**  | \|              |    Grass     |
-| **中**  | >>>             |    Dragon    |
-| **⏚**  | <<<             |    Ground   |
+| **🔥**    | +               |    Fire      |
+| **🌊**    | -               |    Water     |
+| **🪨**    | *               |    Rock      |
+| **💨**    | /               |    Flying    |
+| **⚡**     | //              |    Electric  |
+| **☠️**    | %               |    Poison    |
+| **✊**    | >               |   Fighting   |
+| **🔮**    | <               |    Psychic   |
+| **✨**    | ==              |    Normal    |
+| **👻**    | != 			  |     Ghost 	 |
+| **🧚**    | (               |    Fairy     |
+| **🌌**    | )               |    Dark      |
+| **❄️()**  | abs()           |    Ice       |
+| **⛓()**  | log()			  | 	Steel    |
+| **🌿**    | \|              |    Grass     |
+| **🐉**    | >>>             |    Dragon    |
+| **🏝️**    | <<<             |    Ground    |
+| **🐛()**  | ^()			  |     Bug      |
 
-### Types Unused
 
-- Steel
-- Bug
-- Ghost
+
+### Symbols Needed
+
+Ran out of pokemon types, need help representing:
+`>=`
+`<=`
+
 
 ### Data Types
 

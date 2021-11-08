@@ -1,5 +1,5 @@
 from rply import ParserGenerator
-from PokeType.ast import Number, Boolean
+from PokeType.ast import Number, Boolean, NegNumber
 
 class DataTypes():
 	def __init__(self, pg: ParserGenerator) -> None:
@@ -17,5 +17,8 @@ class DataTypes():
 			else:
 				return Boolean(False)
 
-
+		@pg.production('expression : NEG NUMBER')
+		def expression_number_neg(p):
+			b_val = p[1].getstr()
+			return NegNumber(int(p[1].getstr()) * -1)
 		

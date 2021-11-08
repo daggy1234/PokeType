@@ -18,6 +18,10 @@ class Number(BaseType):
 	def __init__(self, value: int) -> None:
 	    super().__init__(value, "number")
 
+class NegNumber(BaseType):
+	def __init__(self, value: int) -> None:
+	    super().__init__(value, "number")
+
 class Boolean(BaseType):
 	def __init__(self, value: int) -> None:
 	    super().__init__(value, "bool")

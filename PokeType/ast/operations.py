@@ -21,3 +21,11 @@ class Mul(BinaryOp):
 class Div(BinaryOp):
     def eval(self):
         return self.left.eval() / self.right.eval()
+
+class FloorDiv(BinaryOp):
+    def eval(self):
+        return self.left.eval() // self.right.eval()
+
+class Modulo(BinaryOp):
+    def eval(self):
+        return self.left.eval() % self.right.eval()
