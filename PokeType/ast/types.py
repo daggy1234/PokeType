@@ -3,8 +3,8 @@ from rply.token import BaseBox
 
 
 class BaseType(BaseBox):
-	def __init__(self,value ,d_type: str) -> None:
-		self.value: T = value
+	def __init__(self,value ,d_type: str) -> None: 
+		self.value = value
 		self.type = d_type
 
 	def get_type(self) -> str:
@@ -23,5 +23,5 @@ class NegNumber(BaseType):
 	    super().__init__(value, "number")
 
 class Boolean(BaseType):
-	def __init__(self, value: int) -> None:
+	def __init__(self, value: str) -> None:
 	    super().__init__(value, "bool")

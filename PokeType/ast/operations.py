@@ -29,3 +29,7 @@ class FloorDiv(BinaryOp):
 class Modulo(BinaryOp):
     def eval(self):
         return self.left.eval() % self.right.eval()
+
+class Exponent(BinaryOp):
+    def eval(self):
+        return self.left.eval() ** self.right.eval()

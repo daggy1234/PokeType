@@ -1,5 +1,5 @@
 from rply import ParserGenerator
-from PokeType.lexer import PokeLexer
+from poketype.lexer import PokeLexer
 from .data_types import DataTypes
 from .maths import Maths
 from .compare import Compare

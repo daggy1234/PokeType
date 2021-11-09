@@ -1,5 +1,5 @@
 from rply import ParserGenerator
-from PokeType.ast import Add, Sub, Div, Mul, FloorDiv, Modulo
+from poketype.ast import Add, Sub, Div, Mul, FloorDiv, Modulo
 
 class Maths():
 

@@ -30,3 +30,11 @@ class Equal(CompareOp):
 class NotEqual(CompareOp):
     def eval_op(self):
         return self.left.eval() != self.right.eval()
+
+class LessThanEqual(CompareOp):
+    def eval_op(self):
+        return self.left.eval() <= self.right.eval()
+
+class GreaterThanEqual(CompareOp):
+    def eval_op(self):
+        return self.left.eval() >= self.right.eval()

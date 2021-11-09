@@ -1,5 +1,5 @@
 from rply import ParserGenerator
-from PokeType.ast import Lesser, Greater, Equal, NotEqual
+from poketype.ast import Lesser, Greater, Equal, NotEqual, LessThanEqual, GreaterThanEqual
 
 class Compare():
 
@@ -8,6 +8,8 @@ class Compare():
 		@pg.production('expression : expression LESSER expression')
 		@pg.production('expression : expression EQUAL expression')
 		@pg.production('expression : expression NOTEQUAL expression')
+		@pg.production('expression : expression LESSEQUAL expression')
+		@pg.production('expression : expression GREATEQUAL expression')
 		def expression_equal(p):
 		    left = p[0]
 		    right = p[2]
@@ -19,5 +21,9 @@ class Compare():
 		        return Equal(left, right)
 		    elif p[1].gettokentype() == 'NOTEQUAL':
 		        return NotEqual(left, right)
+		    elif p[1].gettokentype() == 'LESSEQUAL':
+		        return LessThanEqual(left, right)
+		    elif p[1].gettokentype() == 'GREATEQUAL':
+		        return GreaterThanEqual(left, right)
 		    else:
 		        raise AssertionError('Oops, this should not be possible!')

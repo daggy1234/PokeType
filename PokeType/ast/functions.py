@@ -7,8 +7,8 @@ class FuncOp(BaseBox):
 
 class Log(FuncOp):
     def eval(self):
-        return math.log(self.value)
+        return math.log(self.value.eval())
 
 class Abs(FuncOp):
     def eval(self):
-        return abs(self.value)
+        return abs(self.value.eval())

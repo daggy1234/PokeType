@@ -1,5 +1,5 @@
 from rply import ParserGenerator
-from PokeType.ast import Number, Boolean, NegNumber
+from poketype.ast import Number, Boolean, NegNumber
 
 class DataTypes():
 	def __init__(self, pg: ParserGenerator) -> None:
